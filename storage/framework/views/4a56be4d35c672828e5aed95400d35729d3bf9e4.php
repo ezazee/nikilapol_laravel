@@ -1,238 +1,10 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
   <head>
-    <title>FAQ | Akun</title>
-    <meta charset="utf-8">
-    <meta name="keywords" content="NikiLa, Marketplace, Lamongan, Driver ">
-    <meta name="description" content="NikiLa POL, Marketplace yang digabungkan dengan Delivery Order">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta property="og:title" content="NikiLa POL, Marketplace yang digabungkan dengan Delivery Order" />
-    <meta property="og:description" content="NikiLa POL, Marketplace yang digabungkan dengan Delivery Order" />
-    <meta property="og:url" content="https://ezazee.github.io/NikiLa-POL/" />
-    <meta property="og:image" content="/home/assets/img/banner/2.png" />
-    <link rel="icon" href="/home/assets/img/logo/nikila.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900%7CMerriweather:300,400,700,700i,900">
-    <link rel="stylesheet" href="/home/css/home.css">
-    <link rel="stylesheet" href="/home/css/style.css">
-    <link rel="stylesheet" href="/home/blog_show.css">
-    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
-  
-
-    <style>
-          :root{
-    --warna-dasar: #1293E4;
-    --warna-kedua: #07476f;
-    --warna-ketiga: #09507c;
-    --warna-putih1: #fff;
-    --warna-putih2: #fafafa;
-    --font-dasar: var(--font-dasar), sans-serif;
-    --size-font-subtitle: 50px;
-  }
-
-  /* Button Arrow To Top Webstie */
-  .ui-to-top {
-	position: fixed;
-	right: 15px;
-	bottom: 15px;
-	z-index: 100;
-	width: 40px;
-	height: 40px;
-	font-size: 24px;
-	line-height: 36px;
-	border-radius: 50%;
-	color: #ffffff;
-	background: var(--warna-dasar);
-	overflow: hidden;
-	text-align: center;
-	text-decoration: none;
-	transition: all 0.3s ease-in-out;
-	transform: translate3d(0, 100px, 0);
-}
-
-.ui-to-top:hover {
-	color: #ffffff;
-	background: var(--warna-kedua);
-	text-decoration: none;
-}
-/* End Button ARROW  */
-
-  /* Pre Loader */
-  .cssload-speeding-wheel {
-	width: 64px;
-	height: 64px;
-	margin: 0 auto;
-	border: 3px solid var(--warna-dasar);
-	border-radius: 50%;
-	border-left-color: transparent;
-	border-bottom-color: transparent;
-	animation: cssload-spin .88s infinite linear;
-  }
-/* End Pre Loader */
-
-  
-      /* Button Belanja Sekarang & Button Selengkapnya di Kategori Layanan */
-      .button-secondary, .button-secondary:focus {
-	    color: #ffffff;
-	    background-color: var(--warna-dasar);
-	    border-color: var(--warna-dasar);
-      }
-
-      .button-secondary:hover, .button-secondary:active, .button-secondary.active {
-	    color: #ffffff;
-	    background-color: var(--warna-kedua);
-    	border-color: var(--warna-kedua);
-      }
-
-      .button-secondary.button-nuka:hover, .button-secondary.button-nuka:active, .button-secondary.button-nuka.active {
-	background-color: var(--warna-kedua);
-      }
-
-      .button-secondary.button-nuka .button-overlay {
-        background-color: var(--warna-kedua);
-      }
-      /* End Button Belanja Sekarang & Button Selengkapnya di Kategori Layanan */
-
-
-      /* Hover Text Navbar */
-      .rd-navbar-static.context-dark .rd-nav-link:hover, .rd-navbar-static.bg-gray-700 .rd-nav-link:hover, .rd-navbar-static.bg-gray-800 .rd-nav-link:hover, .rd-navbar-static.bg-primary-app .rd-nav-link:hover, .rd-navbar-static.bg-primary .rd-nav-link:hover, .rd-navbar-static.bg-primary-1 .rd-nav-link:hover, .rd-navbar-static.bg-primary-2 .rd-nav-link:hover, .rd-navbar-static.bg-wave-dark-wrap .rd-nav-link:hover, .rd-navbar-static.bg-gradient-primary .rd-nav-link:hover, .rd-navbar-static.bg-gradient-primary-1 .rd-nav-link:hover, .rd-navbar-static.rd-navbar-corporate .rd-nav-link:hover {
-	    color: var(--warna-dasar);
-      }
-      /* End Hover Text Navbar */
-
-
-       /* Button Seacrj */
-       .c-search__button {
-      position: absolute;
-      min-height: 2.75rem;
-      min-width: 4rem;
-      background-color: transparent;
-      font-size: 1rem;
-      color: var(--warna-kedua);
-      border: none;
-      border-top-right-radius: 24px;
-      border-bottom-right-radius: 24px;
-      text-align: center;
-      right: 0;
-      top: 0;
-      font-weight: 400;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      cursor: pointer;
-      -webkit-transition: .3s;
-      transition: .3s;
-      padding: .5rem;
-      font-family: var(--font-dasar)
-  }
-
-    .c-search__button:active {
-      background-color: var(--warna-ketiga)
-  }
-
-  @media (min-width:768px) {
-      .c-search__button {
-          position: relative;
-          top: auto;
-          right: auto;
-          color: #fff;
-          background-color: var(--warna-kedua);
-          min-height: 3rem;
-          min-width: 7.5rem;
-          border-radius: 24px;
-          font-size: 1rem
-      }
-  }
-  /* End Button Search */
-
-  /* Button Outline Suka atau Tidak */
-  button.btn--outline {
-    border: 1px solid var(--warna-dasar);
-    -webkit-transition: all .5s;
-    transition: all .5s;
-    background-color: #fff;
-    color: var(--warna-dasar);
-}
-
-button.btn--outline:hover {
-    border: 1px solid var(--warna-kedua);
-    background-color: var(--warna-kedua);
-    color: #fff
-}
-
-button.btn--outline:active,
-button.btn--outline:focus {
-    background-color: var(--warna-kedua)
-}
-
-/* End Button Outline SUka Atau Tidak */
-
-
- /* Banner CTA */
-#cta {
-    padding: 50px 0;
-    background: var(--warna-ketiga) url(/home/assets/img/Smatphone/smartphone-full.png) -200px center no-repeat;
-    background-size: 67%;
-    position: relative;
-}
-
-@media screen and (max-width: 576px) {
-    #cta {
-        padding: 50px 0;
-        background: var(--warna-kedua) url(/home/assets/img/home-img.png) -110% no-repeat;
-        background-size: 20%;
-        position: relative;
-    }
-
-    #cta .box-cta {
-        width: auto;
-        margin-left: auto;
-    }
-
-    #cta .cta-text {
-        text-align: center;
-        font-size: 30px;
-        line-height: 40px;
-        font-weight: 600;
-        color: #FFF;
-        margin-bottom: 30px;
-    }
-
-    #cta a.btn-cta {
-        background: #FFF;
-        border-radius: 40px;
-        color: #222;
-        margin-left: 100px;
-        font-weight: 600;
-        padding: 8px 20px;
-    }
-  }
-
-  /* end banner CTA */
-
-
-  /* Footer */
-footer {
-    background: var(--warna-kedua);
-    padding: 50px 0 0 0;
-    color: #E9E9E9;
-}
-/* End Footer */
-    </style>
-
+  <?php echo $__env->make('master.meta', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+  <?php echo $__env->make('master.head-css', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+  <link rel="stylesheet" href="/home/css/konten_blog.css">
+  <?php echo $__env->make('master.root', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
   </head>
   <body>
     <div class="preloader">
@@ -404,7 +176,7 @@ footer {
 			</li>
 			<li class="c-breadcrumbs-item active" itemprop="itemListElement" itemscope
 				itemtype="http://schema.org/ListItem" aria-current="page">
-				<span itemprop="name">{{ $blog->title }}</span>
+				<span itemprop="name"><?php echo e($blog->title); ?></span>
 				<meta itemprop="position" content="4" />
 			</li>
 		</ol>
@@ -415,11 +187,12 @@ footer {
 			<div class="row">
 				<div class="c-faq-detail__content col-12 offset-md-2 col-md-8">
 					<div class="c-faq-detail__header">
-						<h1 class="c-faq-detail__title">{{ $blog->title }}</h1>
+						<h1 class="c-faq-detail__title"><?php echo e($blog->title); ?></h1>
 					</div>
 
 					<div class="c-faq-detail__body">
-          {!! $blog->description !!}
+          <?php echo $blog->description; ?>
+
           </div>
 
 					<div class="c-faq-detail__footer">
@@ -547,4 +320,4 @@ footer {
 		});
     </script>
   </body>
-</html>
+</html><?php /**PATH D:\File Reza\Codingan\.REAL PROJECT\nikilapol + cms\resources\views/show.blade.php ENDPATH**/ ?>

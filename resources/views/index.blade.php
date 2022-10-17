@@ -29,7 +29,7 @@
             <h2 class="mb-0 d-block d-lg-block">{{ $header->title }}</h2>
             <p class="mr-lg-5"> {{ $header->description }}</p>
             <div class="atf-one__btn-wrap">
-              <a href="https://{{ $header->link }}"> <img src="/home/assets/img/googleplay.png" width="150px" alt=""></a>
+              <a href="{{ $header->link }}"> <img src="/home/assets/img/googleplay.png" width="150px" alt=""></a>
             </div>
           </div>
 
