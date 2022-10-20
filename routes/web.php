@@ -21,6 +21,7 @@ use App\Http\Controllers\MercbannerController;
 use App\Http\Controllers\MerctutorController;
 use App\Http\Controllers\WhitelabelController;
 use App\Http\Controllers\DetailblogController;
+use App\Models\Detailblog;
 use App\Models\Merctutor;
 
 /*

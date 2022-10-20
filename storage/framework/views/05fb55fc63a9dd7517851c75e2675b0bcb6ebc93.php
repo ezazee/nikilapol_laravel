@@ -72,16 +72,18 @@
 		<section class="c-section c-faq-detail">
 			<div class="row">
 				<div class="c-faq-detail__content col-12 offset-md-2 col-md-8">
-					<div class="c-faq-detail__header">
+					<?php $__currentLoopData = $blog; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $blog): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+						<div class="c-faq-detail__header">
 						<h1 class="c-faq-detail__title"><?php echo e($blog->title); ?></h1>
 					</div>
 
-          <figure class="text-center"><img class="lazy" data-image="11119"  src="../../../../assets/img/konten_blog/konten_5.jpg" style="height: auto;width: 100%; border-radius: 10px;"/></figure>
+          			<figure class="text-center"><img class="lazy" data-image="11119"  src="/image/<?php echo e($blog->gambar); ?>" srcset="/image/<?php echo e($blog->gambar); ?>" data-srcset="/image/<?php echo e($blog->gambar); ?>" style="height: auto;width: 100%; border-radius: 10px;"/></figure>
 
 					<div class="c-faq-detail__body">
-						<p><?php echo e($blog->description); ?></p>
-            <p>Source : <a href="https://komentar.id/usai-di-launcing-aplikasi-ojek-online-nyaku-bitung-bakal-beroperasi/"> komentar.id</a></p>
+						<p><?php echo $blog->description; ?></p>
+           			 <p>Source : <a href="https://komentar.id/usai-di-launcing-aplikasi-ojek-online-nyaku-bitung-bakal-beroperasi/"> komentar.id</a></p>
 					</div>
+					<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 
 					<div class="c-faq-detail__footer">
 						
@@ -114,6 +116,8 @@
 			</div>
 		</section>
 	</div>
+	<?php echo $__env->make('master.cta', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+			<?php echo $__env->make('master.footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 </article>
     </main>
 

@@ -8,7 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class Detailblog extends Model
 {  use HasFactory;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'title',
+        'slug',
+        'description',
+        'category',
+        'gambar',
+        'date',
+        'author',
+    ];
 
     public function getRouteKey()
     {

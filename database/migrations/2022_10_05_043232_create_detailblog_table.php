@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('detailblog', function (Blueprint $table) {
             $table->id();
+            $table->string('gambar');
             $table->timestamps();
         });
     }

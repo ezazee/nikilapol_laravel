@@ -72,16 +72,18 @@
 		<section class="c-section c-faq-detail">
 			<div class="row">
 				<div class="c-faq-detail__content col-12 offset-md-2 col-md-8">
-					<div class="c-faq-detail__header">
+					@foreach ( $blog as $blog )
+						<div class="c-faq-detail__header">
 						<h1 class="c-faq-detail__title">{{ $blog->title }}</h1>
 					</div>
 
-          <figure class="text-center"><img class="lazy" data-image="11119"  src="../../../../assets/img/konten_blog/konten_5.jpg" style="height: auto;width: 100%; border-radius: 10px;"/></figure>
+          			<figure class="text-center"><img class="lazy" data-image="11119"  src="/image/{{ $blog->gambar }}" srcset="/image/{{ $blog->gambar }}" data-srcset="/image/{{ $blog->gambar }}" style="height: auto;width: 100%; border-radius: 10px;"/></figure>
 
 					<div class="c-faq-detail__body">
-						<p>{{ $blog->description }}</p>
-            <p>Source : <a href="https://komentar.id/usai-di-launcing-aplikasi-ojek-online-nyaku-bitung-bakal-beroperasi/"> komentar.id</a></p>
+						<p>{!! $blog->description !!}</p>
+           			 <p>Source : <a href="https://komentar.id/usai-di-launcing-aplikasi-ojek-online-nyaku-bitung-bakal-beroperasi/"> komentar.id</a></p>
 					</div>
+					@endforeach
 
 					<div class="c-faq-detail__footer">
 						
@@ -114,6 +116,8 @@
 			</div>
 		</section>
 	</div>
+	@include('master.cta')
+			@include('master.footer')
 </article>
     </main>
 

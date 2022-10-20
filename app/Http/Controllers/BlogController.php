@@ -102,7 +102,7 @@ class BlogController extends Controller
         //Validasi input data
         $this->validate($request, [
             'title'     => 'required|min:5',
-            // 'slug'      => 'required|min:5',
+            'slug'      => 'required|min:5',
             'category'  => 'required|min:5',
             // 'author'  => 'required|min:5',
             'description' => 'required|min:5',
