@@ -49,7 +49,7 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('/privacy', 'privacy');
 });
 
-Route::resource('/blog/detail', DetailblogController::class);
+Route::resource('blog-detail', DetailblogController::class);
 
 //Update User Details
 Route::post('/update-profile/{id}', [App\Http\Controllers\PanelController::class, 'updateProfile'])->name('updateProfile');

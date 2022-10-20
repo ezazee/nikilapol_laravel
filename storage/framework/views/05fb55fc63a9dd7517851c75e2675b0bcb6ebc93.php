@@ -72,7 +72,8 @@
 		<section class="c-section c-faq-detail">
 			<div class="row">
 				<div class="c-faq-detail__content col-12 offset-md-2 col-md-8">
-					<?php $__currentLoopData = $blog; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $blog): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+					<?php if($blog->count()): ?>
+						<?php $__currentLoopData = $blog; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $blog): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
 						<div class="c-faq-detail__header">
 						<h1 class="c-faq-detail__title"><?php echo e($blog->title); ?></h1>
 					</div>
@@ -84,6 +85,7 @@
            			 <p>Source : <a href="https://komentar.id/usai-di-launcing-aplikasi-ojek-online-nyaku-bitung-bakal-beroperasi/"> komentar.id</a></p>
 					</div>
 					<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+					<?php endif; ?>
 
 					<div class="c-faq-detail__footer">
 						

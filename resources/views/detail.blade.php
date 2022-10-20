@@ -72,7 +72,8 @@
 		<section class="c-section c-faq-detail">
 			<div class="row">
 				<div class="c-faq-detail__content col-12 offset-md-2 col-md-8">
-					@foreach ( $blog as $blog )
+					@if ($blog->count())
+						@foreach ( $blog as $blog )
 						<div class="c-faq-detail__header">
 						<h1 class="c-faq-detail__title">{{ $blog->title }}</h1>
 					</div>
@@ -84,6 +85,7 @@
            			 <p>Source : <a href="https://komentar.id/usai-di-launcing-aplikasi-ojek-online-nyaku-bitung-bakal-beroperasi/"> komentar.id</a></p>
 					</div>
 					@endforeach
+					@endif
 
 					<div class="c-faq-detail__footer">
 						

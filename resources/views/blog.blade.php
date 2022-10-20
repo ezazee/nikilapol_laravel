@@ -128,7 +128,7 @@
           @foreach ($blog as $blog)
             <!-- Card 1 -->
             <div class="o-row--slider__col-3 c-list-grid-item">
-              <a href="/blog/detail">
+              <a href="{{ route('blog-detail.index', $blog->id)}}">
                 <div class="col-12">
                   <div class="c-blog-hl-wrapper--one lazy">
                     <picture class="lazy loaded">

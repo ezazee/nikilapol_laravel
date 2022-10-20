@@ -9,8 +9,8 @@ use Illuminate\Http\Request;
 
 class DetailblogController extends Controller
 {
-  public function index(){
-        $blog = Blog::all();
+  public function index($id){
+        $blog = Blog::all()->where('id', $id);
         $whitelabel = whitelabel::all();
         $detailblog = Detailblog::all();
         return view('/detail', compact('detailblog', 'whitelabel', 'blog'));

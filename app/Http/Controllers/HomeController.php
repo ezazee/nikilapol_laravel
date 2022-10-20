@@ -92,9 +92,9 @@ class HomeController extends Controller
         return view('blog',compact('whitelabel','blog'));
     }
 
-    public function detailblog(){
+    public function detailblog($id){
          $whitelabel = Whitelabel::all();
-          $blog = Blog::all();
+          $blog = Blog::all($id);
           return view('detail',compact('whitelabel','blog'));
     }
 

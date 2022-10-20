@@ -128,7 +128,7 @@
           <?php $__currentLoopData = $blog; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $blog): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
             <!-- Card 1 -->
             <div class="o-row--slider__col-3 c-list-grid-item">
-              <a href="/blog/detail">
+              <a href="<?php echo e(route('blog-detail.index', $blog->id)); ?>">
                 <div class="col-12">
                   <div class="c-blog-hl-wrapper--one lazy">
                     <picture class="lazy loaded">
